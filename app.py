@@ -12,6 +12,6 @@ def mobiles():
 def payment():
     return render_template('payment.html')
 if __name__ == "__main__":
-        app.run(host='0.0.0.0',port=8082)
+        app.run(host='0.0.0.0',port=8083)
 
 
