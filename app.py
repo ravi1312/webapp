@@ -4,7 +4,7 @@ app = Flask(__name__,template_folder='templates')
 
 @app.route('/')
 def hello_world():
-        return render_template('home.html')
+        return render_template('flipkart.html')
 @app.route('/payment')
 def payment():
     return render_template('payment.html')
