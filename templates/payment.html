@@ -3,6 +3,16 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+<!--jQuery library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!--Latest compiled and minified JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navbar in Bootstrap</title>
 <style>
 body {
   font-family: Arial;
@@ -107,13 +117,92 @@ span.price {
     margin-bottom: 20px;
   }
 }
+*{
+  padding:0px;
+  margin:0px;
+  box-sizing:border-box;
+
+
+}
+nav .navbar-header a{
+  font-family:'Raleway',sans-serif;
+  letter-spacing:1px;
+}
+nav .navbar-header a,ul li a{
+  color:#fff;
+
+}
+nav .navbar-header button .fa{
+  color:#fff;
+  border:1px solid #fff;
+  border-radius:5px;
+  padding:4px 10px;
+  font-size:1.5em;
+  position:absolute;
+  top:-0.5px;
+  left:-30px;
+}
+
+.glyphicon-search{
+  color:#2874f0;
+}
+}
+form{
+  position:relative;
+  top:10px;
+}
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
 </style>
 </head>
 <body>
+  <nav class="navbar navbar-dark navbar-fixed-top" style="background-color:#2874f0; height:7%">
+    <div class="container1">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#"><img src="https://github.com/ravi1312/webapp/blob/main/templates/fk-plus_3b0baa%20(1).png?raw=true"></a>
+        </div>
 
-<h2>Responsive Checkout Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
-<div class="row">
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <form class="navbar-form navbar-left">
+  <div class="form-group">
+  <input type="text" class="form-control" placeholder="Search">
+  </div>
+  </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span class="badge"></span></a></li>
+                <li><a href=""><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+              <li><a href=""><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+<br><br><br>
+<div class="row" style="width:100%">
   <div class="col-75">
     <div class="container">
       <form action="/action_page.php">
@@ -179,8 +268,10 @@ span.price {
   </div>
   <div class="col-25">
     <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="https://rukminim1.flixcart.com/image/416/416/j9d3bm80/mobile/g/x/j/apple-iphone-x-mqa62hn-a-original-imaeyzyfdzhfckef.jpeg?q=70">Product 1</a> <span class="price">Rs 92,400</span></p>
+      <h4><b>Cart</b> <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+      <h4><b>iphone x</b> <span class="price" style="color:black"></span></h4>
+      <img src="https://rukminim1.flixcart.com/image/416/416/j9d3bm80/mobile/f/y/v/apple-iphone-x-mqa92hn-a-original-imaeyzzvaqggkygg.jpeg?q=70" alt="">
+      <p><a href="https://rukminim1.flixcart.com/image/416/416/j9d3bm80/mobile/g/x/j/apple-iphone-x-mqa62hn-a-original-imaeyzyfdzhfckef.jpeg?q=70"></a> <span class="price">Rs 92,400</span></p>
       <hr>
       <p>Total <span class="price" style="color:black"><b>Rs 92,400</b></span></p>
     </div>
