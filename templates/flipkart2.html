@@ -1,0 +1,393 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <!--jQuery library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!--Latest compiled and minified JavaScript-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>E-COMMERCE </title>
+<style>
+*{
+padding:0px;
+margin:0px;
+box-sizing:border-box;
+
+
+}
+
+nav .navbar-header a{
+font-family:'Raleway',sans-serif;
+letter-spacing:1px;
+}
+nav .navbar-header a,ul li a{
+color:#fff;
+
+}
+nav .navbar-header button .fa{
+color:#fff;
+border:1px solid #fff;
+border-radius:5px;
+padding:4px 10px;
+font-size:1.5em;
+position:absolute;
+top:-0.5px;
+left:-30px;
+}
+
+.glyphicon-search{
+color:#2874f0;
+}
+
+}
+form{
+position:relative;
+top:10px;
+}
+
+.menu{
+border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #cec5c5;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.container1{
+                height: auto;
+                width: 25%;
+            }
+            .container1 img{
+                width: 100%;
+                display: block;
+
+            }
+            .container1:hover img{
+                transform: scale(1.3);
+            }
+            * {box-sizing: border-box;}
+                body {font-family: Verdana, sans-serif;}
+                .mySlides {display: none;}
+                img {vertical-align: middle;}
+                .checked {
+  color: orange;
+                }
+                .button {
+  background-color: #ff9f00;
+  border: none;
+  color: white;
+  padding: 3px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.thumbnail .caption .buttons{
+  margin:1px;
+}
+.button2 {
+  background-color: #fb641b;
+  border: none;
+  color: white;
+  padding: 3px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.input1{
+    width: 75%;
+    height: 45%;
+}
+
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-fixed-top" style="background-color:#2874f0;">
+      <div class="container" >
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand" href="{{ url_for('hello_world') }}">Amazon</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <form class="navbar-form navbar-left">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search">
+  </div>
+  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href=""><span class="glyphicon glyphicon-shopping-cart"></span> Cart<span class="badge"></span></a></li>
+                  <li><a href=""><span class="glyphicon glyphicon-cog"></span> Settings</a></li>
+                <li><a href=""><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+<div class="menu container-fluid text-center hidden-xs" style="position:relative;top:4em; padding-bottom:5px;">
+<div class="container-fluid">
+<div class="row">
+
+  <div class="col-sm-2">
+    <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+Men
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+<li><a href="#">Footwear</a></li>
+<li><a href="#">Top wear</a></li>
+<li><a href="#">Sports wear</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+  </div>
+
+  <div class="col-sm-2">
+    <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+Women
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+  </div>
+
+  <div class="col-sm-2">
+    <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+Cameras
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+  </div>
+
+  <div class="col-sm-2">
+    <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+Electronics
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+<li><a href="#">Mobiles</a></li>
+<li><a href="#">Laptops</a></li>
+<li><a href="#">Accessories</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+  </div>
+
+  <div class="col-sm-2">
+    <button class="btn btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="background-color:#fff;">
+Books
+<span class="caret"></span>
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li role="separator" class="divider"></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+  </div>
+
+  <div class="col-sm-2">
+    <button class="btn btn-block" aria-expanded="true" style="background-color:#fff;">Offer Zone</button>
+  </div>
+
+
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://rukminim1.flixcart.com/flap/1800/1800/image/6ef02d0d5720c4ce.jpg?q=80" style="width:100%" height="50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://rukminim1.flixcart.com/flap/1800/1800/image/15e9c13b095033ef.jpg?q=80" style="width:100%" height="50%">
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://trak.in/wp-content/uploads/2019/10/special-flipkart-mobile-diwali-sale.png" style="width:100%" height="50%">
+
+  </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+</div>
+    <div class="table">
+      <table border="0" width="100%">
+        <tr>
+          <td colspan="5" style="color:blue"> <h2><b>Mobiles</b><hr size="20" width="100%"></h2></td>
+        </tr>
+        <tr>
+         <td align="center"> <div class="container1"><a href="{{ url_for('mobiles') }}"><img src="https://rukminim1.flixcart.com/image/312/312/j9d3bm80/mobile/g/x/j/apple-iphone-x-mqa62hn-a-original-imaeyzyfdzhfckef.jpeg?q=70" width="25%"></a></div></td>
+         <td align="center"><div class="container1"><a href="{{ url_for('mobiles') }}"><img src="https://rukminim1.flixcart.com/image/312/312/j9d3bm80/mobile/g/x/j/apple-iphone-x-mqa62hn-a-original-imaeyzyfdzhfckef.jpeg?q=70" width="25%"></a></div></td>
+         <td align="center"><div class="container1"><a href="{{ url_for('mobiles') }}"><img src="https://rukminim1.flixcart.com/image/312/312/j9d3bm80/mobile/g/x/j/apple-iphone-x-mqa62hn-a-original-imaeyzyfdzhfckef.jpeg?q=70" width="25%"></a></div></td>
+         <td align="center"><div class="container1"><a href="{{ url_for('mobiles') }}"><img src="https://rukminim1.flixcart.com/image/312/312/j9d3bm80/mobile/g/x/j/apple-iphone-x-mqa62hn-a-original-imaeyzyfdzhfckef.jpeg?q=70" width="25%"></a></div></td>
+         <td align="center"><div class="container1"><a href="{{ url_for('mobiles') }}"><img src="https://rukminim1.flixcart.com/image/312/312/j9d3bm80/mobile/g/x/j/apple-iphone-x-mqa62hn-a-original-imaeyzyfdzhfckef.jpeg?q=70" width="25%"></a></div></td>
+        </tr>
+         <tr>
+          <td align="center"><br> iphone x <br> <font color:"green">Price:10000</font><br>
+            <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span><br>
+            <a href="{{ url_for('mobiles') }}"><button class="button">View Product</button></a><br>
+            <a href="{{ url_for('payment') }}"><button class="button2">Buy Now</button></td></a>
+
+            </td>
+          <td align="center"><br> iphone x <br> <font color:"#388e3c">Price:10000</font> <br>
+            <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span><br>
+            <a href="{{ url_for('mobiles') }}"><button class="button">View Product</button></a><br>
+            <a href="{{ url_for('payment') }}"><button class="button2">Buy Now</button></td></a>
+            </td>
+          <td align="center"><br> iphone x <br> <font color:"#388e3c">Price:10000</font> <br>
+            <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span><br>
+            <a href="{{ url_for('mobiles') }}"><button class="button">View Product</button></a><br>
+            <a href="{{ url_for('payment') }}"><button class="button2">Buy Now</button></td></a>
+            </td>
+          <td align="center"><br> iphone x <br> <font color:"#388e3c">Price:10000</font> <br>
+            <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span><br>
+            <a href="{{ url_for('mobiles') }}"><button class="button">View Product</button></a><br>
+            <a href="{{ url_for('payment') }}"><button class="button2">Buy Now</button></td></a>
+            </td>
+          <td align="center"><br> iphone x <br> <font color:"#388e3c">Price:10000</font> <br>
+            <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span><br>
+            <a href="{{ url_for('mobiles') }}"><button class="button">View Product</button></a><br>
+            <a href="{{ url_for('payment') }}"><button class="button2">Buy Now</button></td></a>
+            </td>
+         </tr>
+
+      </table>
+  </div>
+
+</body>
+</html>
