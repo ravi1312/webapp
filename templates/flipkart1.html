@@ -162,6 +162,52 @@ img {vertical-align: middle;}
     width: 75%;
     height: 45%;
 }
+footer{
+  position:relative;
+  top:15em;
+  color:#565656;
+  width:100%;
+  margin-bottom:10px;
+}
+footer .container .col-sm-4 ul li a{
+  color:#565656;
+}
+footer .container .col-sm-4 ul li a:hover{
+  text-decoration:none;
+}
+
+footer .container-fluid span{
+  font-size:30px;
+  position:absolute;
+  top:25%;
+  left:12%;
+}
+footer .container-fluid h3{
+  font-size:20px;
+  margin-left:30px;
+}
+
+footer .contact button{
+  background-color:#565656;
+  color:#fff;
+}
+@media (min-width:863px){
+  footer .container-fluid span{
+  font-size:40px;
+  position:absolute;
+  top:10%;
+
+}
+footer .container-fluid h3{
+ font-size:1.9rem;
+
+  width:70%;
+  position:relative;
+  left:15%;
+  top:-10px;
+}
+}
+
 
 </style>
 </head>
@@ -173,7 +219,7 @@ img {vertical-align: middle;}
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand" href="{{ url_for('hello_world') }}">Flipkart</a>
+              <a class="navbar-brand" href="{{ url_for('hello_world') }}"><img src="https://github.com/ravi1312/webapp/blob/main/templates/fk-plus_3b0baa%20(1).png?raw=true"></a>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <form class="navbar-form navbar-left">
@@ -325,6 +371,7 @@ Books
     }
     </script>
 </div>
+<br>
     <div class="table">
       <table border="0" width="100%">
         <tr>
@@ -388,6 +435,100 @@ Books
 
       </table>
   </div>
+
+  <!-- FOOTER -->
+
+  <footer class="page-footer container-fluid col-sm-12">
+  <hr>
+  <div class="container">
+  <div class="col-sm-4">
+  <h4>Help</h4>
+  <ul class="list-unstyled quick-links">
+  <li><a href="">Payments</a></li>
+
+  <li><a href="">Shipping</a></li>
+
+  <li><a href="">Cancellations & Return</a></li>
+
+  <li><a href="">FAQ</a></li>
+
+  </ul>
+  </div>
+
+  <div class="col-sm-4">
+  <h4>Flipkart</h4>
+  <ul class="list-unstyled quick-links">
+  <li><a href="">Contact Us</a></li>
+
+  <li><a href="">About Us</a></li>
+  <li><a href="">Careers</a></li>
+  <li><a href="">Stories</a></li>
+  <li><a href="">Sell With Us</a></li>
+  </ul>
+  </div>
+
+  <div class="col-sm-4">
+  <h4>MISC</h4>
+  <ul class="list-unstyled quick-links">
+  <li><a href="">Online Shopping</a></li>
+  <li><a href="">Gift Card</a></li>
+  <li><a href=""></a></li>Sitemap
+  </ul>
+  </div>
+
+  </div>
+
+  <div class="container-fluid col-lg-10 col-lg-offset-1">
+  <div class="row">
+  <hr>
+  <div class="col-sm-4">
+  <span class="glyphicon glyphicon-map-marker"></span>
+  <h3 class="text-center">&nbsp;TRACK YOUR ORDER</h3>
+  </div>
+
+  <div class="col-sm-4">
+  <span class="glyphicon glyphicon-refresh"></span>
+  <h3 class="text-center">&nbsp;&nbsp;FREE & EASY RETURNS</h3>
+
+  </div>
+
+  <div class="col-sm-4">
+  <span class="glyphicon glyphicon-remove-circle"></span>
+  <h3 class="text-center">ONLINE CANCELLATIONS</h3>
+  </div>
+  </div>
+  </div>
+  <br>
+  <!--/div>
+  </div-->
+  <div class="container-fluid" style="position:relative;top:6em;margin-bottom:20px;">
+
+  <div class="col-sm-5">
+
+  <h5 style="font-size:0.95em;">Policies: <a href=""  style="text-decoration:none;"> Return Policy </a>|<a href=""  style="text-decoration:none;"> Terms of use </a>|<a href=""  style="text-decoration:none;"> Security </a>|<a href=""  style="text-decoration:none;"> Privacy </a>|<a href=""  style="text-decoration:none;"> Infringement</a></h5>
+
+  </div>
+
+  <div class="col-sm-3">
+  <h5 style="font-size:0.95em;">&copy; LIFESTYLE STORE</h5>
+  </div>
+
+  <div class="col-sm-4 row contact">
+  <h5 class="col-sm-5" style="font-size:0.95em;">Keep in touch</h5>
+  <div class="col-sm-7">
+  <button class="btn btn-default" style="border-radius:50%;width:40px;height:40px;"><i class="fa fa-facebook-f"></i></button>
+
+  <button class="btn btn-default" style="border-radius:50%;width:40px;height:40px;"><i class="fa fa-twitter"></i></button>
+
+  <button class="btn btn-default" style="border-radius:50%;width:40px;height:40px;"><i class="fa fa-google"></i></button>
+
+  <button class="btn btn-default" style="border-radius:50%;width:40px;height:40px;"><i class="fa fa-youtube"></i></button>
+  </div>
+  </div>
+
+  </div>
+  <hr>
+  </footer>
 
 </body>
 </html>
